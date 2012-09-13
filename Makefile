@@ -6,7 +6,7 @@ include *.mk
 
 REMOTE=origin
 GITURL=https://github.com/
-DEVSTACK_DIR=../devstack-dev
+DEVSTACK_DIR=../devstack
 
 USE := $(patsubst %,use-%,$(WORKING_SETS))
 use: $(USE)

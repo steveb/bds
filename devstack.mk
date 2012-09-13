@@ -1,4 +1,4 @@
-ALL_PROJ += devstack-dev \
+ALL_PROJ += devstack \
 ceilometer \
 cinder \
 glance \
