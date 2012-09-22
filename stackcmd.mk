@@ -8,4 +8,4 @@ screen:
 	screen -r
 
 source-heat:
-	cd $(DEVSTACK_DIR) && source openrc heat service
+	echo "pushd $(DEVSTACK_DIR) && source openrc heat service && popd"
