@@ -1,4 +1,22 @@
-ALL_PROJ=
+ALL_PROJ += ceilometer \
+cinder \
+glance \
+heat \
+horizon \
+keystone \
+nova \
+quantum \
+noVNC \
+openstack-common \
+python-cinderclient \
+python-glanceclient \
+python-keystoneclient \
+python-novaclient \
+python-openstackclient \
+python-swiftclient \
+swift \
+swift3
+
 WORKING_SETS= \
 devstack
 
