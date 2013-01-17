@@ -1,4 +1,6 @@
 stack:
+	sudo yum -y erase rabbitmq-server
+	sudo rm -rf /var/lib/rabbitmq/*
 	cd $(DEVSTACK_DIR) && ./stack.sh
 
 unstack:
@@ -7,5 +9,5 @@ unstack:
 screen:
 	screen -r
 
-source-heat:
-	echo "pushd $(DEVSTACK_DIR) && source openrc heat service && popd"
+openrc:
+	pushd $(DEVSTACK_DIR) ; source ./openrc ; popd
